@@ -1,0 +1,56 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: aquamarine;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: auto;
+    position: fixed;
+    width: 100%;
+}  
+
+/* Style the links inside the navigation bar */
+header a {
+    float: right;
+    color: #616265;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 27px;
+    height: 100%;
+}
+
+header a:hover {
+color: black;
+}
+
+/* Add a color to the active/current link */
+header a.active {
+background-color: #04AA6D;
+color: white;
+}  
+ 
+.headerimg{
+    margin: 0px;
+    height: 100px;
+}
+
+@media (min-width: 1000px){
+    .navbar{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    header a{
+        width: 10%;
+    }
+}
+@media (max-width: 300px){
+    header a{
+        display: none;
+    }
+}
+
